@@ -35,7 +35,7 @@ public class Student {
 		this.studentName = studentName;
 	}
 
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="schoolId")
 	private School schoolName;
 
