@@ -28,7 +28,7 @@ public class School {
 		this.schoolName = schoolName;
 	}
 
-	@OneToMany(mappedBy="schoolName")
+	@OneToMany(mappedBy="schoolName",cascade=CascadeType.ALL)
 	private List<Student> student;
 
 	public List<Student> getStudent() {
